@@ -61,5 +61,16 @@ public class Runner {
             }
         }
         System.out.println("Max total expenses: " + name + " - " + maxTotal);
+
+        //task #8
+
+        Converter newCurrency = new Converter(8,2);
+        for (BusinessTrip businessTrip : businessTrips) {
+            if (businessTrip != null) {
+                newCurrency.convert(businessTrip);
+                System.out.println("__________");
+            }
+        }
+
     }
 }
