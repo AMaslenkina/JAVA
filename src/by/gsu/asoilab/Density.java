@@ -5,7 +5,7 @@ public class Density {
     private int density;
 
     public Density(){
-        super();
+        this("",0);
     }
 
     public Density(String name, int density) {
@@ -32,10 +32,7 @@ public class Density {
 
     @Override
     public String toString() {
-        return "Density{" +
-                "name='" + name + '\'' +
-                ", density=" + density +
-                '}';
+        return name + ";" + density;
     }
 }
 
