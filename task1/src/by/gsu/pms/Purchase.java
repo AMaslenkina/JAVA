@@ -10,6 +10,9 @@ public class Purchase {
         this.price = price;
         this.number = number;
     }
+    public Purchase{
+        this("",0,0);
+    }
 
     public String getName() {
         return name;
@@ -35,4 +38,12 @@ public class Purchase {
         this.number = number;
     }
 
+    public double getCost(){
+        return this.price*this.number;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return name + ";" + price + ";" + number + ";" + getCost();
+    }
 }
