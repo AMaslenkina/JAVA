@@ -46,4 +46,9 @@ public class Purchase {
     public java.lang.String toString() {
         return name + ";" + price + ";" + number + ";" + getCost();
     }
+
+    public boolean equals(){
+       return this.name == purchase.getName() && this.price == purchase.getPrice();
+    }
+
 }
