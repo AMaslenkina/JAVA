@@ -9,5 +9,7 @@ public class Runner {
         System.out.println(steel.toString());
         System.out.println(copper.toString());
         System.out.println(wire.toString());
+        wire.setDensity(copper);
+        System.out.println(wire.toString());
     }
 }
