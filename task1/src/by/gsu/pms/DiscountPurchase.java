@@ -1,12 +1,13 @@
 package by.gsu.pms;
 
+import java.util.Scanner;
+
 public class DiscountPurchase extends Purchase {
 
     private int discount;
 
     public DiscountPurchase(int discount) {
-        super(name, price.number);
-
+        super(name, price, number);
         this.discount = discount;
     }
 

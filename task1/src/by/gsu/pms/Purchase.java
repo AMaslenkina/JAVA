@@ -1,5 +1,7 @@
 package by.gsu.pms;
 
+import java.util.Scanner;
+
 public class Purchase {
     private String name;
     private double price;
@@ -43,7 +45,7 @@ public class Purchase {
         return this.price*this.number;
     }
 
-    @java.lang.Override
+    @Override
     public java.lang.String toString() {
         return name + ";" + price + ";" + number + ";" + getCost();
     }
