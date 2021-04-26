@@ -8,15 +8,15 @@ public class Runner {
         Commodity commodity = new Commodity("Nutella",3000);
 
         AbstractPurchase[] purchases = {
-                new PriceDiscountPurchase(commodity, 11, 22),
-                new PriceDiscountPurchase(commodity, 22, 36),
-                new PercentDiscountPurchase(commodity, 3, 8),
-                new PercentDiscountPurchase(commodity, 4, 15),
-                new TransportExpensesPurchase(commodity, 40, 400),
-                new TransportExpensesPurchase(commodity, 350, 100),
+                new PriceBuy(commodity, 11, 22),
+                new PriceBuy(commodity, 22, 36),
+                new PriceBuy(commodity, 3, 8),
+                new PriceBuy(commodity, 4, 15),
+                new TransportBuy(commodity, 40, 400),
+                new TransportBuy(commodity, 350, 100),
         };
 
-        for (AbstractPurchase purchase: purchases) {
+        for (AbstractBuy purchase: purchases) {
             System.out.println(purchase);
         }
 
